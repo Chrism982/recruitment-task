@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #f5f0ec;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -106,21 +106,76 @@ header.hero-block .buttons {
   right: 0;
 }
 
+.section-heading {
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+}
+.section-title {
+  font-size: 0.75rem;
+  color: #1b5b31;
+  margin-bottom: 1em;
+}
+.section-description {
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  margin-bottom: 0.6em;
+  font-weight: 500;
+}
+.section-description span {
+  font-style: italic;
+}
+.section-details {
+  font-size: 1rem;
+}
+
+.offer-box {
+  padding: 3em 2em;
+  margin: 2em;
+  border-radius: 28px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.offer-box h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-top: 2em;
+}
+.offer-box p {
+  font-size: 0.875rem;
+  margin-bottom: 3em;
+}
+.offer-box .btn {
+  background: none;
+  padding: 0;
+  color: #1b5b31;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #1b5b31;
+}
+
 @media (min-width: 768px) {
   header.hero-block .hero-text h1 {
-    font-size: 3em;
+    font-size: 2.2em;
   }
   header.hero-block .hero-text p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   header.hero-block .hero-text button {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   header.hero-block .hero-img {
     width: 70vw;
   }
   header.hero-block .buttons {
     transform: translateX(-120%);
+  }
+  .section-heading {
+    text-align: left;
   }
 }
 @media (min-width: 992px) {
@@ -147,13 +202,49 @@ header.hero-block .buttons {
     margin-right: 2em;
   }
   header.hero-block .hero-img {
-    width: 44vw;
-    margin-left: 39px;
+    width: 55vw;
+    margin-left: -100px;
   }
   header.hero-block .carousel-inner {
     height: 737px;
   }
   header.hero-block .buttons {
-    transform: translateX(-28%);
+    transform: translateX(-19%);
+  }
+}
+@media (min-width: 1200px) {
+  header.hero-block .hero-text {
+    text-align: left;
+  }
+  header.hero-block .hero-text h1 {
+    padding: 0 4.2em 1em 0;
+    font-size: 3.75em;
+  }
+  header.hero-block .hero-text p {
+    padding: 0 19.3em 1em 0;
+    font-size: 1em;
+  }
+  header.hero-block .hero-text button {
+    font-size: 1em;
+    width: 33%;
+  }
+  header.hero-block .hero-text .btn-primary {
+    width: 29%;
+    margin-right: 2em;
+  }
+  header.hero-block .hero-img {
+    width: 45vw;
+    margin-left: -10px;
+  }
+  header.hero-block .carousel-inner {
+    height: 737px;
+  }
+  .section-heading {
+    text-align: left;
+    margin: 5em 9em;
+    width: 59%;
+  }
+  .section-description {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */
