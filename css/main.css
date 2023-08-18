@@ -55,10 +55,9 @@ header.hero-block .hero-text p {
   font-family: Inter;
   padding: 0.8em;
 }
-header.hero-block .hero-text button {
+header.hero-block .hero-text .btn {
   padding: 0.8em;
   margin-bottom: 3em;
-  width: 100%;
   font-size: 0.65rem;
   font-family: Inter;
   border-radius: 50px;
@@ -68,7 +67,6 @@ header.hero-block .hero-text button {
 }
 header.hero-block .hero-text .btn-primary {
   margin-right: 1em;
-  width: 70%;
   background-color: #1b5b31;
   border: none;
   color: #fff;
@@ -206,6 +204,11 @@ header.hero-block .buttons {
   color: #1b5b31;
 }
 
+.realizations {
+  width: 100%;
+  background-color: #dcc1ab;
+}
+
 .instagram-block {
   display: flex;
   background-color: #1b5b31;
@@ -283,7 +286,7 @@ header.hero-block .buttons {
   header.hero-block .hero-text h1 {
     padding-left: 0;
   }
-  header.hero-block .hero-text button {
+  header.hero-block .hero-text .btn {
     font-size: 0.8em;
   }
   header.hero-block .hero-img {
@@ -333,13 +336,6 @@ header.hero-block .buttons {
   header.hero-block .hero-text p {
     padding: 0 19.3em 1em 0;
   }
-  header.hero-block .hero-text button {
-    width: 38%;
-  }
-  header.hero-block .hero-text .btn-primary {
-    width: 30%;
-    margin-right: 2em;
-  }
   header.hero-block .hero-img {
     width: 55vw;
     margin-left: -100px;
@@ -375,7 +371,7 @@ header.hero-block .buttons {
     padding: 0 19.3em 4.5em 0;
     font-size: 1em;
   }
-  header.hero-block .hero-text button {
+  header.hero-block .hero-text .btn {
     font-size: 1em;
     width: 33%;
   }
@@ -426,6 +422,9 @@ header.hero-block .buttons {
   }
   .about .btn {
     font-size: 1rem;
+  }
+  .realizations .section-heading {
+    margin: 5em 0;
   }
   .instagram-block {
     padding: 7.5em 6.875em;
