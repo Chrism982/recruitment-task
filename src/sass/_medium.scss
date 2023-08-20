@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+	header.hero-block {
+		.hero-text {
+			text-align: left;
+			width: 80%;
+			h1 {
+				padding-left: 0;
+			}
+
+			.btn {
+				font-size: 0.8em;
+			}
+		}
+		.hero-img {
+			width: 60vw;
+		}
+		.buttons {
+			transform: translateX(-90%);
+		}
+	}
+	.section {
+		&-heading {
+			text-align: left;
+		}
+	}
+	.about {
+		&-img {
+			min-height: 60vh;
+			margin-left: -8%;
+		}
+		.section {
+			&-heading {
+				padding: 3em;
+			}
+			&-title {
+				padding: 0;
+				margin: 0;
+				margin-bottom: 50px;
+			}
+			&-description {
+				padding: 0;
+			}
+			&-details {
+				padding: 1em 1em 0 0;
+			}
+		}
+	}
+	.realizations {
+		.grid-wrapper {
+			column-count: 2;
+		}
+	}
+	.instagram {
+		&-details p {
+			margin: 2em 0;
+		}
+	}
+	.footer-menu {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 2.5rem;
+	}
+	header.hero-block {
+		.hero-text {
+			width: 100%;
+			h1 {
+				padding: 0 4.2em 1em 0;
+			}
+			p {
+				padding: 0 19.3em 1em 0;
+			}
+		}
+		.hero-img {
+			width: 55vw;
+			margin-left: -100px;
+		}
+		.carousel-inner {
+			height: 737px;
+		}
+		.buttons {
+			transform: translateX(-20%);
+		}
+	}
+	.about {
+		&-img {
+			height: 70vh;
+
+			margin-left: -8%;
+		}
+		.section {
+			&-heading {
+				width: 80%;
+				margin: auto;
+				.btn {
+					margin-top: 4.5em;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}

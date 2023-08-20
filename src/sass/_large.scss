@@ -1,0 +1,157 @@
+@media (min-width: 1200px) {
+	nav {
+		.input-search {
+			width: 25%;
+            bottom: -70%;
+            right: 4%;
+		}
+	}
+	header.hero-block {
+		.hero-text {
+			h1 {
+				padding: 0 4.2em 1em 0;
+				font-size: 3.75em;
+			}
+			p {
+				padding: 0 19.3em 4.5em 0;
+				font-size: 1em;
+			}
+			.btn {
+				font-size: 1em;
+				width: 40%;
+			}
+			.btn-primary {
+				width: 29%;
+				margin-right: 2em;
+			}
+		}
+		.hero-img {
+			width: 45vw;
+			margin-left: -10px;
+		}
+		.buttons {
+			transform: translateX(-8%);
+		}
+	}
+	.section {
+		&-title {
+			margin-bottom: 1em;
+		}
+		&-heading {
+			text-align: left;
+			margin: 5em 9em;
+			width: 59%;
+		}
+		&-description {
+			font-size: 3rem;
+		}
+	}
+	.offer-box {
+		margin: 0 2em 6em 2em;
+		height: 370px;
+		.btn {
+			font-size: 1rem;
+		}
+	}
+	.about {
+		&-img {
+			min-height: 100vh;
+		}
+		.section-heading,
+		.section-title {
+			padding: 0;
+			font-weight: 400;
+			margin-bottom: 50px;
+		}
+		.section-description {
+			padding: 0;
+			width: 95%;
+		}
+		.section-details {
+			font-size: 1rem;
+			margin: 0 0 0 0;
+			font-weight: 400;
+		}
+		.btn {
+			font-size: 1rem;
+		}
+	}
+	.realizations {
+		.section-heading {
+			margin: 5em 0;
+		}
+		.grid-wrapper {
+			column-count: 3;
+		}
+	}
+	.instagram {
+		&-block {
+			padding: 7.5em 6.875em;
+			margin: 3.75em 3em;
+			align-items: center;
+			text-align: left;
+			flex-direction: row;
+		}
+		&-heading {
+			width: 90%;
+			h3 {
+				font-size: 2.5rem;
+				letter-spacing: 0.5px;
+			}
+			span {
+				font-style: italic;
+			}
+		}
+		&-details {
+			p {
+				width: 75%;
+				font-size: 1rem;
+			}
+			.btn {
+				font-size: 1rem;
+			}
+		}
+	}
+	.footer {
+		&-heading {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+		&-description {
+			display: flex;
+			align-items: baseline;
+			.btn {
+				font-size: 1rem;
+				margin-left: 1.5em;
+			}
+		}
+		&-contact,
+		&-info {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+		&-contact {
+			padding: 3.875em 0;
+		}
+		&-menu {
+			a {
+				margin-right: 3em;
+				padding: 0;
+			}
+		}
+		&-info {
+			padding: 0;
+			p {
+				margin-left: 3em;
+			}
+		}
+		&-copyright {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 3.625em;
+		}
+	}
+}

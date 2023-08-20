@@ -14,6 +14,7 @@ body {
 }
 // NAV
 nav {
+	position: relative;
 	background-color: $white;
 	z-index: 5;
 	.navbar-nav .nav-link {
@@ -32,6 +33,19 @@ nav {
 	.nav-link:hover {
 		color: $green-color;
 	}
+	.input-search {
+		position: absolute;
+		bottom: 10px;
+		right: 10%;
+		width: 70%;
+		padding: 0.4em;
+		text-align: center;
+		font-size: 0.8rem;
+		border-radius: 25px;
+		border: 1px solid black;
+		transition: 0.3s;
+		display: none;
+	}
 }
 // HEADER
 header.hero-block {
@@ -46,9 +60,6 @@ header.hero-block {
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-
-		// padding-right: 185px;
-
 		h1 {
 			font-size: 2rem;
 			font-weight: 500;
@@ -73,7 +84,6 @@ header.hero-block {
 		}
 		.btn-primary {
 			margin-right: 1em;
-			// width: 70%;
 			background-color: $green-color;
 			border: none;
 			color: $white;
@@ -90,10 +100,6 @@ header.hero-block {
 		margin-left: -12px;
 	}
 
-	.carousel-inner {
-		// height: 737px;
-		position: relative;
-	}
 	.fa-arrow-left,
 	.fa-arrow-right {
 		color: black;
@@ -183,6 +189,11 @@ header.hero-block {
 }
 // ABOUT
 .about {
+	.break-after {
+		display: inline-block;
+		white-space: pre-line;
+	}
+
 	.container {
 		padding: 0;
 	}
@@ -190,7 +201,7 @@ header.hero-block {
 	overflow: hidden;
 	background-color: $green-color;
 	&-img {
-		background-image: url('../img/about.jpg');
+		background-image: url('../../dist/img/about.jpg');
 		min-height: 100vh;
 		width: auto;
 		background-position: center;
@@ -221,9 +232,102 @@ header.hero-block {
 }
 // REALIZATIONS
 .realizations {
-	width: 100%;
-    // height: 100vh;
+	img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	/* Main CSS */
+	.grid-wrapper > div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.grid-wrapper > div > img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	.grid-wrapper {
+		column-count: 1;
+		column-gap: 1em;
+		margin: 1.5em;
+		padding: 0;
+		-moz-column-gap: 1.5em;
+		-webkit-column-gap: 1.5em;
+		column-gap: 1.5em;
+		font-size: 0.85em;
+	}
+	.grid-wrapper .grid-item {
+		display: inline-block;
+		margin: 0 0 1.5em;
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	.grid-wrapper .tall {
+		height: 601px;
+	}
+	.grid-wrapper .medium {
+		height: 451px;
+	}
+
+	.grid-wrapper .small {
+		height: 338px;
+	}
 	background-color: $beige;
+	.gradient-div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(220, 193, 171, 1)
+		);
+	}
+
+	.container {
+		position: relative;
+		height: 1500px;
+		overflow: hidden;
+		padding-bottom: 3em;
+	}
+	.container-show {
+		height: auto;
+	}
+	.container-handle {
+		transition: 0.3s ease-out;
+	}
+	.fas {
+		transition: transform 0.6s;
+	}
+	.btn {
+		position: absolute;
+		bottom: 45px;
+		color: $black;
+		background-color: none;
+		font-size: 0.8rem;
+		padding: 0.8em 1.88em;
+		margin-bottom: 2.8em;
+		border-radius: 25px;
+		border: 1px solid black;
+		transition: transform color 0.3s;
+		outline: none;
+	}
+	.btn:hover {
+		background-color: $black;
+		color: $beige;
+	}
 }
 
 // INSTAGRAM BLOCK
@@ -299,6 +403,10 @@ header.hero-block {
 			color: $white;
 			padding: 0.5em;
 		}
+		a:hover {
+			color: $green-color;
+			border-bottom: 1px solid $green-color;
+		}
 	}
 	&-info {
 		padding: 3em 0;
@@ -306,208 +414,5 @@ header.hero-block {
 }
 
 // MEDIA
-@media (min-width: 768px) {
-	header.hero-block {
-		.hero-text {
-			text-align: left;
-			width: 80%;
-			h1 {
-				padding-left: 0;
-			}
-
-			.btn {
-				font-size: 0.8em;
-			}
-		}
-		.hero-img {
-			width: 60vw;
-		}
-		.buttons {
-			transform: translateX(-90%);
-		}
-	}
-	.section {
-		&-heading {
-			text-align: left;
-		}
-	}
-	.about {
-		&-img {
-			min-height: 60vh;
-			margin-left: -8%;
-		}
-		.section {
-			&-heading {
-				padding: 3em;
-			}
-			&-title {
-				padding: 0;
-				margin: 0;
-			}
-			&-description {
-				padding: 1em 1em 0 0;
-			}
-			&-details {
-				padding: 1em 1em 0 0;
-			}
-		}
-	}
-	.instagram {
-		&-details p {
-			margin: 2em 0;
-		}
-	}
-	.footer-menu {
-		flex-direction: row;
-		justify-content: center;
-	}
-}
-@media (min-width: 992px) {
-	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-left: 2.5rem;
-	}
-	header.hero-block {
-		.hero-text {
-			width: 100%;
-			h1 {
-				padding: 0 4.2em 1em 0;
-			}
-			p {
-				padding: 0 19.3em 1em 0;
-			}
-		}
-		.hero-img {
-			width: 55vw;
-			margin-left: -100px;
-		}
-		.carousel-inner {
-			height: 737px;
-		}
-		.buttons {
-			transform: translateX(-20%);
-		}
-	}
-	.about {
-		&-img {
-			height: 100vh;
-
-			margin-left: -8%;
-		}
-		.section {
-			&-heading {
-				width: 80%;
-				margin: 2em 4em 2em 8em;
-				.btn {
-					margin-top: 4.5em;
-					font-size: 1rem;
-				}
-			}
-			&-description {
-				margin-right: 3em;
-			}
-		}
-	}
-}
-@media (min-width: 1200px) {
-	header.hero-block {
-		.hero-text {
-			h1 {
-				padding: 0 4.2em 1em 0;
-				font-size: 3.75em;
-			}
-			p {
-				padding: 0 19.3em 4.5em 0;
-				font-size: 1em;
-			}
-			.btn {
-				font-size: 1em;
-				width: 33%;
-			}
-			.btn-primary {
-				width: 29%;
-				margin-right: 2em;
-			}
-		}
-		.hero-img {
-			width: 45vw;
-			margin-left: -10px;
-		}
-		.buttons {
-			transform: translateX(-8%);
-		}
-	}
-	.section {
-		&-title {
-			margin-bottom: 1em;
-		}
-		&-heading {
-			text-align: left;
-			margin: 5em 9em;
-			width: 59%;
-		}
-		&-description {
-			font-size: 3rem;
-		}
-	}
-	.offer-box {
-		margin: 0 2em 6em 2em;
-		.btn {
-			font-size: 1rem;
-		}
-	}
-	.about {
-		&-img {
-			background-image: url('../img/about.jpg');
-			margin-left: -45%;
-		}
-		.section-heading,
-		.section-title {
-			padding: 0;
-			font-weight: 400;
-		}
-		.section-description {
-			padding-right: 3em;
-		}
-		.section-details {
-			font-size: 1rem;
-			margin: 0 0 0 0;
-			font-weight: 400;
-		}
-		.btn {
-			font-size: 1rem;
-		}
-	}
-    .realizations {
-        .section-heading {
-            margin: 5em 0;
-        }
-    }
-	.instagram {
-		&-block {
-			padding: 7.5em 6.875em;
-			margin: 3.75em 3em;
-			align-items: center;
-			text-align: left;
-			flex-direction: row;
-		}
-		&-heading {
-			width: 90%;
-			h3 {
-				font-size: 2.5rem;
-				letter-spacing: 0.5px;
-			}
-			span {
-				font-style: italic;
-			}
-		}
-		&-details {
-			p {
-				width: 75%;
-				font-size: 1rem;
-			}
-			.btn {
-				font-size: 1rem;
-			}
-		}
-	}
-}
+@import './medium';
+@import './large';
