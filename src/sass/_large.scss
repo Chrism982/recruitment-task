@@ -18,7 +18,8 @@
 			}
 			.btn {
 				font-size: 1em;
-				width: 40%;
+				width: 38%;
+                margin-left: 0;
 			}
 			.btn-primary {
 				width: 29%;
@@ -83,6 +84,9 @@
 		.grid-wrapper {
 			column-count: 3;
 		}
+        .container-show {
+            height: 1800px;
+        }
 	}
 	.instagram {
 		&-block {

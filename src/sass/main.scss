@@ -74,12 +74,15 @@ header.hero-block {
 		}
 		.btn {
 			padding: 0.8em;
-			margin-bottom: 3em;
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+			margin-bottom: 3em; 
 			font-size: 0.65rem;
 			font-family: Inter;
 			border-radius: 50px;
 			background-color: transparent;
 			color: $green-color;
+			
 			cursor: pointer;
 		}
 		.btn-primary {
@@ -102,8 +105,8 @@ header.hero-block {
 
 	.fa-arrow-left,
 	.fa-arrow-right {
-		color: black;
-		background-color: white;
+		color: $black;
+		background-color: $white;
 		font-size: 1.5em;
 		padding: 1em;
 		border: none;
@@ -194,7 +197,7 @@ header.hero-block {
 		white-space: pre-line;
 	}
 
-	.container {
+	.container-fluid {
 		padding: 0;
 	}
 
@@ -217,7 +220,7 @@ header.hero-block {
 		padding-top: 1em;
 		.btn {
 			padding: 0.8em;
-			margin-top: 2em;
+			margin: 2em 0;
 			background: none;
 			font-size: 0.8rem;
 			color: $white;
@@ -240,13 +243,13 @@ header.hero-block {
 	}
 
 	/* Main CSS */
-	.grid-wrapper > div {
+	.grid-wrapper > a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 	}
-	.grid-wrapper > div > img {
+	.grid-wrapper > a > img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
@@ -294,6 +297,7 @@ header.hero-block {
 			rgba(0, 0, 0, 0),
 			rgba(220, 193, 171, 1)
 		);
+		transition: 0.3s;
 	}
 
 	.container {
@@ -303,13 +307,10 @@ header.hero-block {
 		padding-bottom: 3em;
 	}
 	.container-show {
-		height: auto;
+		height: 4600px;
 	}
 	.container-handle {
-		transition: 0.3s ease-out;
-	}
-	.fas {
-		transition: transform 0.6s;
+		transition: height 0.4s;
 	}
 	.btn {
 		position: absolute;

@@ -24,7 +24,7 @@
 			src="https://kit.fontawesome.com/b893819e8f.js"
 			crossorigin="anonymous"></script>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<link href="path/to/lightbox.css" rel="stylesheet" />
+		<link href="./node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
 	</head>
 	<body>
 		<nav
@@ -77,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<input class="input-search" placeholder="Szukaj" type="text">
+			<input class="input-search" placeholder="Szukaj" type="text" />
 		</nav>
 		<header class="hero-block">
 			<div class="container">
@@ -260,36 +260,35 @@
 						<h2 class="section-title">Realizacje</h2>
 						<h3 class="section-description">Nasze <span>projekty</span></h3>
 					</div>
-					
-					<div class="grid-wrapper">
-						<div class="grid-item tall" >
-							<img src="./dist/img/project-img-1.jpg" alt="" />
-						</div>
-						<div class="grid-item medium">
-							<img src="./dist/img/project-img-4.jpg" alt="" />
-						</div>
-						<div class="grid-item small">
-							<img src="./dist/img/project-img-8.jpg" alt="" />
-						</div>
-						<div class="grid-item small">
-							<img src="./dist/img/project-img-2.jpg" alt="" />
-						</div>
-						<div class="grid-item medium">
-							<img src="./dist/img/project-img-5.jpg" alt="" />
-						</div>
-						<div class="grid-item tall">
-							<img src="./dist/img/project-img-9.jpg" alt="" />
-						</div>
 
-						<div class="grid-item medium">
-							<img src="./dist/img/project-img-3.jpg" alt="" />
-						</div>
-						<div class="grid-item tall">
-							<img src="./dist/img/project-img-6.jpg" alt="" />
-						</div>
-						<div class="grid-item small">
-							<img src="./dist/img/project-img-10.jpg" alt="" />
-						</div>
+					<div class="grid-wrapper">
+						<a href="./dist/img/project-img-1.jpg" data-lightbox="example" class="grid-item tall">
+							<img src="./dist/img/project-img-1.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-4.jpg" data-lightbox="example" class="grid-item medium">
+							<img src="./dist/img/project-img-4.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-8.jpg" data-lightbox="example" class="grid-item small">
+							<img src="./dist/img/project-img-8.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-2.jpg" data-lightbox="example" class="grid-item small">
+							<img src="./dist/img/project-img-2.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-5.jpg" data-lightbox="example" class="grid-item medium">
+							<img src="./dist/img/project-img-5.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-9.jpg" data-lightbox="example" class="grid-item tall">
+							<img src="./dist/img/project-img-9.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-3.jpg" data-lightbox="example" class="grid-item medium">
+							<img src="./dist/img/project-img-3.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-6.jpg" data-lightbox="example" class="grid-item tall">
+							<img src="./dist/img/project-img-6.jpg" alt="project-img" />
+						</a>
+						<a href="./dist/img/project-img-10.jpg" data-lightbox="example" class="grid-item small">
+							<img src="./dist/img/project-img-10.jpg" alt="project-img" />
+						</a>
 					</div>
 
 					<div class="bottom-section d-flex justify-content-center">
@@ -373,7 +372,7 @@
 			});
 		</script>
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-		<script src="path/to/lightbox.js"></script>
+		<script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
 		<script src="./dist/js/app.min.js"></script>
 	</body>
 </html>
