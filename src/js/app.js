@@ -34,15 +34,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
-const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(:last-child)');
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 const inputSearch = document.querySelector('.input-search');
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
 	link.addEventListener('click', () => {
 		if (window.innerWidth <= 992) {
-			navbarCollapse.classList.remove('show'); 
-			inputSearch.style.display = 'none'; 
+			navbarCollapse.classList.remove('show');
+			inputSearch.style.display = 'none';
 		}
 	});
 });
