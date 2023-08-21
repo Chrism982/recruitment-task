@@ -76,13 +76,13 @@ header.hero-block {
 			padding: 0.8em;
 			margin-left: 0.5em;
 			margin-right: 0.5em;
-			margin-bottom: 3em; 
+			margin-bottom: 3em;
 			font-size: 0.65rem;
 			font-family: Inter;
 			border-radius: 50px;
 			background-color: transparent;
 			color: $green-color;
-			
+
 			cursor: pointer;
 		}
 		.btn-primary {
@@ -162,9 +162,11 @@ header.hero-block {
 	padding: 3em 2em;
 	margin: 1em;
 	border-radius: 28px;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	align-items: baseline;
 	background-color: $white;
 	h3 {
 		font-size: 1.75rem;
@@ -328,6 +330,10 @@ header.hero-block {
 	.btn:hover {
 		background-color: $black;
 		color: $beige;
+	}
+	.btn:focus {
+		outline: none;
+		
 	}
 }
 
