@@ -34,7 +34,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const navbarCollapse = document.querySelector('.navbar-collapse');
+const inputSearch = document.querySelector('.input-search');
 
+navLinks.forEach((link) => {
+	link.addEventListener('click', () => {
+		if (window.innerWidth <= 992) {
+			navbarCollapse.classList.remove('show');
+			inputSearch.style.display = 'none';
+		}
+	});
+});
 
 var elem = document.querySelector('.gri-item');
 var msnry = new Masonry(elem, {
