@@ -40,3 +40,9 @@ var elem = document.querySelector('.gri-item');
 var msnry = new Masonry(elem, {
 	itemSelector: 'gri-item',
 });
+
+AOS.init({
+	startEvent: 'DOMContentLoaded',
+	offset: 200,
+	once: true,
+});

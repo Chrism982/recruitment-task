@@ -9,6 +9,8 @@
 
 			.btn {
 				font-size: 0.8em;
+				margin-left: 1em;
+				margin-right: 1em;
 			}
 		}
 		.hero-img {
@@ -49,9 +51,9 @@
 		.grid-wrapper {
 			column-count: 2;
 		}
-        .container-show {
-            height: 2500px;
-        }
+		.container-show {
+			height: 2500px;
+		}
 	}
 	.instagram {
 		&-details p {
